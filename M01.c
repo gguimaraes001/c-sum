@@ -9,11 +9,17 @@ float somarDoisNumeros(float a, float b){
 
 int main()
 {
-    float resultado;
-    resultado = somarDoisNumeros(1, 3);
+    float resultado, a, b;
     
+    printf("Digite o numero A: ");
+    scanf("%f", &a);
     
-    printf("%.2f", resultado);
+    printf("Digite o numero B: ");
+    scanf("%f", &b);
+    
+    resultado = somarDoisNumeros(a, b);
+    
+    printf("A soma eh %.2f", resultado);
 
     return 0;
 }
